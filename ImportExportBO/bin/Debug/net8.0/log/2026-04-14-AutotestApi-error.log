@@ -1,0 +1,63 @@
+{"time":"2026-04-14 09:42:01.226920","level":"ERROR","threadid":"21","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:42:01.287486","level":"ERROR","threadid":"21","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:42:01.338726","level":"ERROR","threadid":"21","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:42:25.130858","level":"ERROR","threadid":"30","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:42:25.205559","level":"ERROR","threadid":"30","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:42:25.281280","level":"ERROR","threadid":"30","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:42:50.200329","level":"ERROR","threadid":"30","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:42:57.293695","level":"ERROR","threadid":"30","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:42:59.718760","level":"ERROR","threadid":"30","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:43:04.336630","level":"ERROR","threadid":"28","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:43:06.542201","level":"ERROR","threadid":"28","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:43:06.592227","level":"ERROR","threadid":"28","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:44:11.233030","level":"ERROR","threadid":"28","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:44:22.100828","level":"ERROR","threadid":"28","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:44:23.888034","level":"ERROR","threadid":"28","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:47:17.187937","level":"ERROR","threadid":"11","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:47:17.241176","level":"ERROR","threadid":"11","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:47:17.291805","level":"ERROR","threadid":"11","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:47:39.980950","level":"ERROR","threadid":"13","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:47:40.030134","level":"ERROR","threadid":"13","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:47:40.078344","level":"ERROR","threadid":"13","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:51:38.717856","level":"ERROR","threadid":"11","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:51:38.772261","level":"ERROR","threadid":"11","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:51:38.825217","level":"ERROR","threadid":"11","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:54:52.101978","level":"ERROR","threadid":"16","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:55:00.099299","level":"ERROR","threadid":"16","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:55:00.154939","level":"ERROR","threadid":"16","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 09:56:26.316764","level":"ERROR","threadid":"17","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.UpdateAsync","line":"77","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:56:26.369399","level":"ERROR","threadid":"17","methodName":"BussinessLayer.Products.ProductService.UpdateAsync","line":"120","message":"UpdateAsync failed for product id: 2"}
+{"time":"2026-04-14 09:56:26.417695","level":"ERROR","threadid":"17","methodName":"ImportExportBO.Controllers.ProductController.UpdateProduct","line":"106","message":"UpdateProduct failed."}
+{"time":"2026-04-14 13:21:51.237420","level":"ERROR","threadid":"20","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:21:51.341915","level":"ERROR","threadid":"20","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:21:51.426065","level":"ERROR","threadid":"20","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 13:21:51.522752","level":"ERROR","threadid":"21","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:21:51.626717","level":"ERROR","threadid":"21","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:21:51.724963","level":"ERROR","threadid":"21","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 13:21:59.635217","level":"ERROR","threadid":"3","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:21:59.749770","level":"ERROR","threadid":"3","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:21:59.839962","level":"ERROR","threadid":"3","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 13:21:59.905846","level":"ERROR","threadid":"20","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:22:00.038602","level":"ERROR","threadid":"20","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:22:00.122941","level":"ERROR","threadid":"20","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 13:23:08.447249","level":"ERROR","threadid":"21","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:23:08.503703","level":"ERROR","threadid":"21","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:23:18.830690","level":"ERROR","threadid":"21","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 13:25:32.776785","level":"ERROR","threadid":"21","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:25:32.867366","level":"ERROR","threadid":"21","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:25:32.947577","level":"ERROR","threadid":"21","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 13:26:04.992801","level":"ERROR","threadid":"25","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:26:05.043412","level":"ERROR","threadid":"25","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:26:05.103655","level":"ERROR","threadid":"25","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 13:29:28.136921","level":"ERROR","threadid":"26","methodName":"DataAccessLayer.Repositories.ProductRepositories.ProductRepository.SearchAsync","line":"139","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:29:28.207738","level":"ERROR","threadid":"26","methodName":"BussinessLayer.Products.ProductService.SearchAsync","line":"204","message":"SearchAsync failed."}
+{"time":"2026-04-14 13:29:28.260303","level":"ERROR","threadid":"26","methodName":"ImportExportBO.Controllers.ProductController.SearchProduct","line":"196","message":"SearchProduct failed."}
+{"time":"2026-04-14 17:20:50.949034","level":"ERROR","threadid":"13","methodName":"DataAccessLayer.Repositories.ProductImageRepositories.ProductImageRepository.GetByProductIdAsync","line":"62","message":"GetByProductIdAsync failed for product id: 2"}
+{"time":"2026-04-14 17:20:51.041325","level":"ERROR","threadid":"13","methodName":"BussinessLayer.Products.ProductService.GetByIdAsync","line":"39","message":"GetByIdAsync failed for product id: 2"}
+{"time":"2026-04-14 17:20:51.130482","level":"ERROR","threadid":"13","methodName":"ImportExportBO.Controllers.ProductController.GetProductById","line":"26","message":"GetProductById failed."}
+{"time":"2026-04-14 17:23:53.486592","level":"ERROR","threadid":"15","methodName":"DataAccessLayer.Repositories.ProductImageRepositories.ProductImageRepository.GetByProductIdAsync","line":"62","message":"GetByProductIdAsync failed for product id: 2"}
+{"time":"2026-04-14 17:23:53.526534","level":"ERROR","threadid":"15","methodName":"BussinessLayer.Products.ProductService.GetByIdAsync","line":"39","message":"GetByIdAsync failed for product id: 2"}
+{"time":"2026-04-14 17:23:53.569016","level":"ERROR","threadid":"15","methodName":"ImportExportBO.Controllers.ProductController.GetProductById","line":"26","message":"GetProductById failed."}
+{"time":"2026-04-14 17:25:16.323160","level":"ERROR","threadid":"15","methodName":"DataAccessLayer.Repositories.ProductImageRepositories.ProductImageRepository.GetByProductIdAsync","line":"0","message":"GetByProductIdAsync failed for product id: 5"}
+{"time":"2026-04-14 17:25:16.377027","level":"ERROR","threadid":"15","methodName":"BussinessLayer.Products.ProductService.GetByIdAsync","line":"39","message":"GetByIdAsync failed for product id: 5"}
+{"time":"2026-04-14 17:25:16.429127","level":"ERROR","threadid":"15","methodName":"ImportExportBO.Controllers.ProductController.GetProductById","line":"26","message":"GetProductById failed."}
