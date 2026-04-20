@@ -25,3 +25,4 @@ D:\Workspace\IE\IE_BO\CommonLib\obj\Debug\net8.0\ref\CommonLib.dll
 D:\Workspace\IE\IE_BO\CommonLib\bin\Debug\verify\CommonLib.deps.json
 D:\Workspace\IE\IE_BO\CommonLib\bin\Debug\verify\CommonLib.dll
 D:\Workspace\IE\IE_BO\CommonLib\bin\Debug\verify\CommonLib.pdb
+d:\Workspace\IE\IE_BO\CommonLib\obj\Debug\net8.0\CommonLib.sourcelink.json

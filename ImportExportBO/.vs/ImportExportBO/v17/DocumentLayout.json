@@ -3,6 +3,55 @@
   "WorkspaceRootPath": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C6DE6CD2-206E-4D1E-AFDA-35DB9DCFE4CD}|..\\Application\\Application.csproj|d:\\workspace\\ie\\ie_bo\\application\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6DE6CD2-206E-4D1E-AFDA-35DB9DCFE4CD}|..\\Application\\Application.csproj|d:\\workspace\\ie\\ie_bo\\application\\products\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0B0F00C-9CB7-4877-AAFC-399360687734}|..\\Domain\\Domain.csproj|d:\\workspace\\ie\\ie_bo\\domain\\products\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\db\\npgsqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\entities\\products\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0B0F00C-9CB7-4877-AAFC-399360687734}|..\\Domain\\Domain.csproj|d:\\workspace\\ie\\ie_bo\\domain\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6DE6CD2-206E-4D1E-AFDA-35DB9DCFE4CD}|..\\Application\\Application.csproj|d:\\workspace\\ie\\ie_bo\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6DE6CD2-206E-4D1E-AFDA-35DB9DCFE4CD}|..\\Application\\Application.csproj|d:\\workspace\\ie\\ie_bo\\application\\products\\repositories\\iproductimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\entities\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\db\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\db\\databaseoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\querying\\querybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\querying\\iquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ADFAD5C-8F4A-468B-88CF-39FD3AD38C55}|..\\Infrastructure\\Infrastructure.csproj|d:\\workspace\\ie\\ie_bo\\infrastructure\\persistence\\querying\\dbsqlattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|d:\\workspace\\ie\\ie_bo\\importexportbo\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|d:\\workspace\\ie\\ie_bo\\importexportbo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -11,27 +60,10 @@
       "RelativeMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D97EDD34-3B09-456C-8307-5B92C71AD896}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\workspace\\ie\\ie_bo\\dataaccesslayer\\repositories\\productimagerepositories\\productimagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04CB9884-FA8D-4D3F-B905-6DF2766CB59C}|..\\BussinessLayer\\BussinessLayer.csproj|d:\\workspace\\ie\\ie_bo\\bussinesslayer\\products\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|d:\\workspace\\ie\\ie_bo\\importexportbo\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D97EDD34-3B09-456C-8307-5B92C71AD896}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\workspace\\ie\\ie_bo\\dataaccesslayer\\repositories\\productrepositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Workspace\\IE_BO\\BussinessLayer\\Products\\ProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Workspace\\IE_BO\\DataManagement\\DapperLib\\Core\\IQueryBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|d:\\workspace\\ie\\ie_bo\\importexportbo\\response\\responsebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBC8B698-87DE-4BCA-BD96-8E8B1DBE936E}|ImportExportBO.csproj|solutionrelative:response\\responsebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Workspace\\IE_BO\\DataAccessLayer\\DTO\\Product\\ProductImageDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -72,6 +104,15 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Workspace\\IE_BO\\DataAccessLayer\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\Repositories\\ProductImageRepositories\\ProductImageRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\Products\\ProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\Repositories\\ProductRepositories\\ProductRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -81,8 +122,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Application\\Products\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Products\\ProductService.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Application\\Products\\ProductService.cs",
+              "RelativeToolTip": "..\\Application\\Products\\ProductService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAA1wDsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:52:02.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Application\\Products\\IProductService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Products\\IProductService.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Application\\Products\\IProductService.cs",
+              "RelativeToolTip": "..\\Application\\Products\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:48:06.247Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -90,6 +157,175 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Domain\\Products\\ProductImage.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Products\\ProductImage.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Domain\\Products\\ProductImage.cs",
+              "RelativeToolTip": "..\\Domain\\Products\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:52:00.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IProductImageRepository.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Application\\Products\\Repositories\\IProductImageRepository.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Products\\Repositories\\IProductImageRepository.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Application\\Products\\Repositories\\IProductImageRepository.cs",
+              "RelativeToolTip": "..\\Application\\Products\\Repositories\\IProductImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:50:43.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\Application\\DependencyInjection.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Application\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:50:23.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Domain\\Products\\Product.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Products\\Product.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Domain\\Products\\Product.cs",
+              "RelativeToolTip": "..\\Domain\\Products\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:47:57.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Entities\\Products\\ProductImage.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Entities\\Products\\ProductImage.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Entities\\Products\\ProductImage.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Entities\\Products\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:47:46.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "..\\Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:47:03.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NpgsqlConnectionFactory.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Db\\NpgsqlConnectionFactory.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Db\\NpgsqlConnectionFactory.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Db\\NpgsqlConnectionFactory.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Db\\NpgsqlConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:46:53.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IDbConnectionFactory.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Db\\IDbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Db\\IDbConnectionFactory.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Db\\IDbConnectionFactory.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Db\\IDbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:46:52.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DatabaseOptions.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Db\\DatabaseOptions.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Db\\DatabaseOptions.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Db\\DatabaseOptions.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Db\\DatabaseOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:46:51.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Entities\\Products\\Product.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Entities\\Products\\Product.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Entities\\Products\\Product.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Entities\\Products\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:46:50.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "QueryBuilder.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Querying\\QueryBuilder.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Querying\\QueryBuilder.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Querying\\QueryBuilder.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Querying\\QueryBuilder.cs",
+              "ViewState": "AgIAAOECAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:41:31.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IQueryBuilder.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Querying\\IQueryBuilder.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Querying\\IQueryBuilder.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Querying\\IQueryBuilder.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Querying\\IQueryBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:41:28.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DbSqlAttribute.cs",
+              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Querying\\DbSqlAttribute.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Persistence\\Querying\\DbSqlAttribute.cs",
+              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Persistence\\Querying\\DbSqlAttribute.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Persistence\\Querying\\DbSqlAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T08:41:26.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "ProductImageRepository.cs",
               "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\Repositories\\ProductImageRepositories\\ProductImageRepository.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\Repositories\\ProductImageRepositories\\ProductImageRepository.cs",
@@ -102,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 34,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\Products\\ProductService.cs",
               "RelativeDocumentMoniker": "..\\BussinessLayer\\Products\\ProductService.cs",
@@ -115,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 35,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\Repositories\\ProductRepositories\\ProductRepository.cs",
               "RelativeDocumentMoniker": "..\\DataAccessLayer\\Repositories\\ProductRepositories\\ProductRepository.cs",
@@ -127,19 +363,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAswBkAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAA0wMkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T03:58:35.083Z"
+              "WhenOpened": "2026-04-13T03:58:35.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -152,19 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ResponseBase.cs",
-              "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\Response\\ResponseBase.cs",
-              "RelativeDocumentMoniker": "Response\\ResponseBase.cs",
-              "ToolTip": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\Response\\ResponseBase.cs",
-              "RelativeToolTip": "Response\\ResponseBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T03:22:27.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 22,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataAccessLayer\\Repositories\\ProductRepositories\\IProductRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataAccessLayer\\Repositories\\ProductRepositories\\IProductRepository.cs",
@@ -176,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\BussinessLayer\\Products\\ProductService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\BussinessLayer\\Products\\ProductService.cs",
@@ -187,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "IQueryBuilder.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataManagement\\DapperLib\\Core\\IQueryBuilder.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataManagement\\DapperLib\\Core\\IQueryBuilder.cs",
@@ -198,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataAccessLayer\\DTO\\ProductDTO\\Product.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataAccessLayer\\DTO\\ProductDTO\\Product.cs",
@@ -210,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "ProductImageDto.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataAccessLayer\\DTO\\Product\\ProductImageDto.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataAccessLayer\\DTO\\Product\\ProductImageDto.cs",
@@ -221,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
@@ -233,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Workspace\\IE\\IE_BO\\ImportExportBO\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -241,12 +466,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T14:12:43.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T14:12:43.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "DataManagement.csproj",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataManagement\\DataManagement.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataManagement\\DataManagement.csproj",
@@ -258,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "DbManagement.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataManagement\\Helper\\DbManagement.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataManagement\\Helper\\DbManagement.cs",
@@ -270,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "IDbManagement.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataManagement\\Helper\\IDbManagement.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataManagement\\Helper\\IDbManagement.cs",
@@ -282,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "QueryBuilder.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataManagement\\DapperLib\\Core\\QueryBuilder.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataManagement\\DapperLib\\Core\\QueryBuilder.cs",
@@ -294,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "ConstValues.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\CommonLib\\ConstValues.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\CommonLib\\ConstValues.cs",
@@ -306,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "CommonLib.csproj",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\CommonLib\\CommonLib.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\CommonLib\\CommonLib.csproj",
@@ -318,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "ConfigData.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\CommonLib\\ConfigData.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\CommonLib\\ConfigData.cs",
@@ -330,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\BussinessLayer\\Class1.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\BussinessLayer\\Class1.cs",
@@ -342,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Workspace\\IE_BO\\DataAccessLayer\\Class1.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\IE_BO\\DataAccessLayer\\Class1.cs",

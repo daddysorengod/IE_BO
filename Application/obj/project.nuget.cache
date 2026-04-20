@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2/IT6dwydZA=",
+  "dgSpecHash": "mxL4Zwy9AE8=",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\IE_BO\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Workspace\\IE\\IE_BO\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thinkbook\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\thinkbook\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\thinkbook\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

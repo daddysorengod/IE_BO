@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "d:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj": {
+    "d:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj",
+        "projectUniqueName": "d:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj",
         "projectName": "BussinessLayer",
-        "projectPath": "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj",
+        "projectPath": "d:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj",
         "packagesPath": "C:\\Users\\thinkbook\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\obj\\",
+        "outputPath": "d:\\Workspace\\IE\\IE_BO\\BussinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -76,14 +76,14 @@
         }
       }
     },
-    "D:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj": {
+    "d:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj",
+        "projectUniqueName": "d:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj",
         "projectName": "CommonLib",
-        "projectPath": "D:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj",
+        "projectPath": "d:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj",
         "packagesPath": "C:\\Users\\thinkbook\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\IE\\IE_BO\\CommonLib\\obj\\",
+        "outputPath": "d:\\Workspace\\IE\\IE_BO\\CommonLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -148,14 +148,14 @@
         }
       }
     },
-    "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "d:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "d:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "d:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\thinkbook\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\obj\\",
+        "outputPath": "d:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -177,11 +177,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj": {
-                "projectPath": "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj"
+              "d:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj": {
+                "projectPath": "d:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj"
               },
-              "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj": {
-                "projectPath": "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj"
+              "d:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj": {
+                "projectPath": "d:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj"
               }
             }
           }
@@ -227,14 +227,14 @@
         }
       }
     },
-    "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj": {
+    "d:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj",
+        "projectUniqueName": "d:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj",
         "projectName": "DataManagement",
-        "projectPath": "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj",
+        "projectPath": "d:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj",
         "packagesPath": "C:\\Users\\thinkbook\\.nuget\\packages\\",
-        "outputPath": "D:\\Workspace\\IE\\IE_BO\\DataManagement\\obj\\",
+        "outputPath": "d:\\Workspace\\IE\\IE_BO\\DataManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -256,8 +256,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj": {
-                "projectPath": "D:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj"
+              "d:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj": {
+                "projectPath": "d:\\Workspace\\IE\\IE_BO\\CommonLib\\CommonLib.csproj"
               }
             }
           }

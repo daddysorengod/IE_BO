@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppLogger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+599e21d65eee511572a119a05df19dd812896326")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94affb06a41fdb28eb7f87a854616348cb531105")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppLogger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppLogger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

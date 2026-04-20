@@ -897,59 +897,48 @@
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
       },
-      "BussinessLayer/1.0.0": {
+      "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "10.0.0"
         },
         "compile": {
-          "bin/placeholder/BussinessLayer.dll": {}
+          "bin/placeholder/Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BussinessLayer.dll": {}
+          "bin/placeholder/Application.dll": {}
         }
       },
-      "CommonLib/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.5"
-        },
         "compile": {
-          "bin/placeholder/CommonLib.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CommonLib.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       },
-      "DataAccessLayer/1.0.0": {
+      "Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "BussinessLayer": "1.0.0",
+          "Application": "1.0.0",
           "Dapper": "2.1.66",
-          "DataManagement": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DataAccessLayer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataAccessLayer.dll": {}
-        }
-      },
-      "DataManagement/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "CommonLib": "1.0.0",
+          "Domain": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Npgsql": "10.0.2"
         },
         "compile": {
-          "bin/placeholder/DataManagement.dll": {}
+          "bin/placeholder/Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataManagement.dll": {}
+          "bin/placeholder/Infrastructure.dll": {}
         }
       }
     }
@@ -2546,32 +2535,26 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "BussinessLayer/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
-      "path": "../BussinessLayer/BussinessLayer.csproj",
-      "msbuildProject": "../BussinessLayer/BussinessLayer.csproj"
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
     },
-    "CommonLib/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../CommonLib/CommonLib.csproj",
-      "msbuildProject": "../CommonLib/CommonLib.csproj"
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     },
-    "DataAccessLayer/1.0.0": {
+    "Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../DataAccessLayer/DataAccessLayer.csproj",
-      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
-    },
-    "DataManagement/1.0.0": {
-      "type": "project",
-      "path": "../DataManagement/DataManagement.csproj",
-      "msbuildProject": "../DataManagement/DataManagement.csproj"
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "BussinessLayer >= 1.0.0",
-      "DataAccessLayer >= 1.0.0",
-      "DataManagement >= 1.0.0",
+      "Application >= 1.0.0",
+      "Infrastructure >= 1.0.0",
       "Microsoft.Extensions.Hosting.WindowsServices >= 10.0.5",
       "NLog.Web.AspNetCore >= 6.1.2",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -2610,14 +2593,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "D:\\Workspace\\IE\\IE_BO\\BussinessLayer\\BussinessLayer.csproj"
+            "D:\\Workspace\\IE\\IE_BO\\Application\\Application.csproj": {
+              "projectPath": "D:\\Workspace\\IE\\IE_BO\\Application\\Application.csproj"
             },
-            "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\Workspace\\IE\\IE_BO\\DataAccessLayer\\DataAccessLayer.csproj"
-            },
-            "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj": {
-              "projectPath": "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj"
+            "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Workspace\\IE\\IE_BO\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

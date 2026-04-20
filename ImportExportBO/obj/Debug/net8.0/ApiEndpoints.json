@@ -41,7 +41,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "BussinessLayer.Products.Models.CreateProductRequest",
+        "Type": "Application.Products.Models.CreateProductRequest",
         "IsRequired": true
       }
     ],
@@ -103,7 +103,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "BussinessLayer.Products.Models.UpdateProductRequest",
+        "Type": "Application.Products.Models.UpdateProductRequest",
         "IsRequired": true
       }
     ],

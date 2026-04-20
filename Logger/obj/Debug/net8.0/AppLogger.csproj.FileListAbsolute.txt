@@ -22,3 +22,4 @@ D:\Workspace\IE\IE_BO\Logger\obj\Debug\net8.0\AppLogger.dll
 D:\Workspace\IE\IE_BO\Logger\obj\Debug\net8.0\refint\AppLogger.dll
 D:\Workspace\IE\IE_BO\Logger\obj\Debug\net8.0\AppLogger.pdb
 D:\Workspace\IE\IE_BO\Logger\obj\Debug\net8.0\ref\AppLogger.dll
+d:\Workspace\IE\IE_BO\Logger\obj\Debug\net8.0\AppLogger.sourcelink.json

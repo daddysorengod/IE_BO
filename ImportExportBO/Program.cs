@@ -1,12 +1,7 @@
-using BussinessLayer.Products;
-using BussinessLayer.Products.Repositories;
-using CommomLib;
-using DataAccessLayer.Repositories.ProductImageRepositories;
-using DataAccessLayer.Repositories.ProductRepositories;
-using DataManagement.Helper;
+using Application;
 using NLog;
 using NLog.Web;
-using System.Reflection.Metadata;
+using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,15 +41,12 @@ try
     builder.Configuration.AddJsonFile(ConfigFile, optional: false, reloadOnChange: true)
         .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
         .AddEnvironmentVariables();
-    ConfigData.InitConfig(builder.Configuration);
 
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();
 
-    builder.Services.AddScoped<IDbManagement, DbManagement>();
-    builder.Services.AddScoped<IProductRepository, ProductRepository>();
-    builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
-    builder.Services.AddScoped<IProductService, ProductService>();
+    builder.Services.AddApplication();
+    builder.Services.AddInfrastructure(builder.Configuration);
 
     var app = builder.Build();
 

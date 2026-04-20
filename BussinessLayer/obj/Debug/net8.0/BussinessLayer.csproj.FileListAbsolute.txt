@@ -32,3 +32,4 @@ d:\Workspace\IE\IE_BO\BussinessLayer\obj\Debug\net8.0\ref\BussinessLayer.dll
 D:\Workspace\IE\IE_BO\BussinessLayer\bin\Debug\verify\BussinessLayer.deps.json
 D:\Workspace\IE\IE_BO\BussinessLayer\bin\Debug\verify\BussinessLayer.dll
 D:\Workspace\IE\IE_BO\BussinessLayer\bin\Debug\verify\BussinessLayer.pdb
+d:\Workspace\IE\IE_BO\BussinessLayer\obj\Debug\net8.0\BussinessLayer.sourcelink.json

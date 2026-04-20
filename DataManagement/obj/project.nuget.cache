@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aAeyeG+Hteo=",
+  "dgSpecHash": "CCLzuXSQJDc=",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj",
+  "projectFilePath": "d:\\Workspace\\IE\\IE_BO\\DataManagement\\DataManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thinkbook\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.5\\microsoft.extensions.configuration.abstractions.10.0.5.nupkg.sha512",
     "C:\\Users\\thinkbook\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
