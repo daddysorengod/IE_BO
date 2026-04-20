@@ -52,3 +52,42 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Visual Studio / IDE
+.vs/
+*.suo
+*.user
+*.userosscache
+*.rsuser
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Local tools / caches
+*.cache
+*.tmp
+*.temp
+*.pidb
+*.svclog
+*.pdb
+
+# Test / coverage outputs
+TestResults/
+coverage/
+coverage-*/
+*.coverage
+*.coveragexml
+
+# Publish outputs
+publish/
+AppPackages/
+
+# Local environment-specific files
+appsettings.Local.json
+appsettings.*.Local.json
+secrets.json
