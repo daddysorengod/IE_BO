@@ -2,8 +2,10 @@
 
 Base route: `api/Product`
 
-## Response envelope
-Tat ca API tra ve theo format:
+## Ghi chu chung
+
+- JSON response duoc serialize theo `camelCase`.
+- Tat ca API tra ve theo `ResponseBase<T>`:
 
 ```json
 {
@@ -13,17 +15,21 @@ Tat ca API tra ve theo format:
 }
 ```
 
-- `code`: id hoac tong so ban ghi (voi search), `-1` khi loi.
-- `message`: thong bao ket qua.
-- `data`: du lieu tra ve (co the `null`).
-
----
+- `code`
+  - `id` cua ban ghi voi `get`, `insert`, `update`, `delete`
+  - `total` voi `search`
+  - `-1` khi co loi
+- `message`: thong bao ket qua
+- `data`: du lieu tra ve, co the la `null`
 
 ## 1) Get product by id
+
 - **Method**: `GET`
 - **URL**: `api/Product/Get-Product/{productId}`
+- **Path param**: `productId > 0`
 
 ### Success (200)
+
 ```json
 {
   "code": 1,
@@ -36,9 +42,9 @@ Tat ca API tra ve theo format:
     "unitOfMeasure": "PCS",
     "listImage": [
       {
-        "productImageId": 10,
+        "productId": 10,
         "imageUrl": "https://cdn/img1.jpg",
-        "isMain": "Y",
+        "isDefault": "Y",
         "sortOrder": 1
       }
     ]
@@ -47,6 +53,7 @@ Tat ca API tra ve theo format:
 ```
 
 ### Not found (404)
+
 ```json
 {
   "code": -1,
@@ -55,13 +62,19 @@ Tat ca API tra ve theo format:
 }
 ```
 
----
+### Luu y
+
+- Neu `productId <= 0` thi tra ve `400 BadRequest` voi message: `Id must be greater than 0.`
+- Product da soft delete (`Delt = "Y"`) cung duoc xem la `not found`
+- `listImage[].productId` la field legacy, hien tai dang chua `product image id`, khong phai product id goc
 
 ## 2) Insert product
+
 - **Method**: `POST`
 - **URL**: `api/Product/Insert-Product`
 
 ### Request body
+
 ```json
 {
   "productCode": "P001",
@@ -70,15 +83,15 @@ Tat ca API tra ve theo format:
   "unitOfMeasure": "PCS",
   "images": [
     {
-      "productImageId": 0,
+      "productId": 0,
       "imageUrl": "https://cdn/img1.jpg",
-      "isMain": "Y",
+      "isDefault": "Y",
       "sortOrder": 1
     },
     {
-      "productImageId": 0,
+      "productId": 0,
       "imageUrl": "https://cdn/img2.jpg",
-      "isMain": "N",
+      "isDefault": "N",
       "sortOrder": 2
     }
   ]
@@ -86,6 +99,7 @@ Tat ca API tra ve theo format:
 ```
 
 ### Success (201)
+
 ```json
 {
   "code": 1,
@@ -96,13 +110,20 @@ Tat ca API tra ve theo format:
 }
 ```
 
----
+### Luu y
+
+- Truong bat buoc: `productCode`, `productName`, `unitOfMeasure`
+- `images` co the rong
+- Tren create, `images[].productId` hien tai khong duoc dung; co the bo qua hoac de `0`
+- Moi image can `imageUrl`, neu thieu se tra ve `400` voi message: `ImageUrl is required.`
 
 ## 3) Update product
+
 - **Method**: `PUT`
 - **URL**: `api/Product/Update-Product`
 
 ### Request body
+
 ```json
 {
   "id": 1,
@@ -112,25 +133,23 @@ Tat ca API tra ve theo format:
   "unitOfMeasure": "PCS",
   "images": [
     {
-      "productImageId": 10,
+      "productId": 10,
       "imageUrl": "https://cdn/img1-new.jpg",
-      "isMain": "Y",
+      "isDefault": "Y",
       "sortOrder": 1
     },
     {
-      "productImageId": 0,
+      "productId": 0,
       "imageUrl": "https://cdn/img3.jpg",
-      "isMain": "N",
+      "isDefault": "N",
       "sortOrder": 3
     }
   ]
 }
 ```
 
-- `productImageId > 0`: update anh cu.
-- `productImageId = 0`: insert anh moi.
-
 ### Success (200)
+
 ```json
 {
   "code": 1,
@@ -143,6 +162,7 @@ Tat ca API tra ve theo format:
 ```
 
 ### Not found (404)
+
 ```json
 {
   "code": -1,
@@ -154,13 +174,23 @@ Tat ca API tra ve theo format:
 }
 ```
 
----
+### Luu y
+
+- `id > 0` la bat buoc, neu khong se tra ve `400` voi message: `Id must be greater than 0.`
+- Truong bat buoc: `productCode`, `productName`, `unitOfMeasure`
+- `images[].productId > 0`: update image da ton tai
+- `images[].productId = 0`: insert image moi
+- `images[].productId` la field legacy, thuc te dang duoc dung nhu `product image id`
+- Neu `images` rong thi API chi update thong tin product, khong dong vao image
 
 ## 4) Delete product
+
 - **Method**: `DELETE`
 - **URL**: `api/Product/Delete-Product/{productId}`
+- **Path param**: `productId > 0`
 
 ### Success (200)
+
 ```json
 {
   "code": 1,
@@ -173,6 +203,7 @@ Tat ca API tra ve theo format:
 ```
 
 ### Not found (404)
+
 ```json
 {
   "code": -1,
@@ -184,25 +215,32 @@ Tat ca API tra ve theo format:
 }
 ```
 
----
+### Luu y
+
+- Neu `productId <= 0` thi tra ve `400 BadRequest` voi message: `Id must be greater than 0.`
+- Delete hien tai la soft delete, repository set `Delt = "Y"`
 
 ## 5) Search product
+
 - **Method**: `GET`
 - **URL**: `api/Product/Search-Product`
 
-### Query params (optional)
+### Query params
+
 - `keyword`
 - `productCode`
 - `productName`
 - `hsCode`
 - `unitOfMeasure`
-- `page` (default: `1`)
-- `pageSize` (default: `20`, max: `200`)
+- `page` (default: `1`, phai `> 0`)
+- `pageSize` (default: `20`, phai `> 0`, toi da `200`)
 
 ### Example URL
-`api/Product/Search-Product?keyword=ao&unitOfMeasure=PCS&page=1&pageSize=10`
+
+`api/Product/Search-Product?productName=ao&unitOfMeasure=PCS&page=1&pageSize=10`
 
 ### Success (200)
+
 ```json
 {
   "code": 2,
@@ -214,14 +252,16 @@ Tat ca API tra ve theo format:
         "productCode": "P001",
         "productName": "Ao thun",
         "hsCode": "6109",
-        "unitOfMeasure": "PCS"
+        "unitOfMeasure": "PCS",
+        "imageUrl": "https://cdn/img1.jpg"
       },
       {
         "id": 2,
         "productCode": "P002",
         "productName": "Ao khoac",
         "hsCode": "6201",
-        "unitOfMeasure": "PCS"
+        "unitOfMeasure": "PCS",
+        "imageUrl": "https://cdn/img2.jpg"
       }
     ],
     "total": 2,
@@ -232,10 +272,15 @@ Tat ca API tra ve theo format:
 }
 ```
 
----
+### Luu y
+
+- Search bo qua product co `Delt = "Y"`
+- `keyword` co trong request model, nhung implementation repository hien tai chua dung field nay de loc
 
 ## Error responses chung
+
 ### Bad request (400)
+
 ```json
 {
   "code": -1,
@@ -245,6 +290,7 @@ Tat ca API tra ve theo format:
 ```
 
 ### Internal server error (500)
+
 ```json
 {
   "code": -1,
@@ -252,3 +298,14 @@ Tat ca API tra ve theo format:
   "data": null
 }
 ```
+
+## Validation messages hien tai
+
+- `Id must be greater than 0.`
+- `ProductCode is required.`
+- `ProductName is required.`
+- `UnitOfMeasure is required.`
+- `ImageUrl is required.`
+- `Page must be greater than 0.`
+- `PageSize must be greater than 0.`
+- `PageSize must be less than or equal to 200.`
