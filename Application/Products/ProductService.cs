@@ -45,6 +45,12 @@ public class ProductService : IProductService
                 ProductName = product.ProductName,
                 HsCode = product.HsCode,
                 UnitOfMeasure = product.UnitOfMeasure,
+                Material = product.Material,
+                ProductionYear = product.ProductionYear,
+                Note = product.Note,
+                Length = product.Length,
+                Width = product.Width,
+                Height = product.Height,
                 ListImage = images.Select(x => new ProductImageResponseItem
                 {
                     ProductId = x.Id,
@@ -72,7 +78,13 @@ public class ProductService : IProductService
                 ProductCode = request.ProductCode.Trim(),
                 ProductName = request.ProductName.Trim(),
                 HsCode = string.IsNullOrWhiteSpace(request.HsCode) ? null : request.HsCode.Trim(),
-                UnitOfMeasure = request.UnitOfMeasure.Trim()
+                UnitOfMeasure = request.UnitOfMeasure.Trim(),
+                Material = TrimToNull(request.Material),
+                ProductionYear = request.ProductionYear,
+                Note = TrimToNull(request.Note),
+                Length = request.Length,
+                Width = request.Width,
+                Height = request.Height
             };
 
             var productId = await _productRepository.InsertAsync(product, cancellationToken);
@@ -113,7 +125,13 @@ public class ProductService : IProductService
                 ProductCode = request.ProductCode.Trim(),
                 ProductName = request.ProductName.Trim(),
                 HsCode = string.IsNullOrWhiteSpace(request.HsCode) ? null : request.HsCode.Trim(),
-                UnitOfMeasure = request.UnitOfMeasure.Trim()
+                UnitOfMeasure = request.UnitOfMeasure.Trim(),
+                Material = TrimToNull(request.Material),
+                ProductionYear = request.ProductionYear,
+                Note = TrimToNull(request.Note),
+                Length = request.Length,
+                Width = request.Width,
+                Height = request.Height
             };
 
             var updated = await _productRepository.UpdateAsync(product, cancellationToken);
@@ -208,6 +226,12 @@ public class ProductService : IProductService
                 ProductName = x.ProductName,
                 HsCode = x.HsCode,
                 UnitOfMeasure = x.UnitOfMeasure,
+                Material = x.Material,
+                ProductionYear = x.ProductionYear,
+                Note = x.Note,
+                Length = x.Length,
+                Width = x.Width,
+                Height = x.Height,
                 ImageUrl = x.ImageUrl
             }).ToList();
 
@@ -245,6 +269,8 @@ public class ProductService : IProductService
         {
             throw new ArgumentException("UnitOfMeasure is required.");
         }
+
+        ValidateProductAttributes(request.ProductionYear, request.Length, request.Width, request.Height);
     }
 
     private static void ValidateUpdateRequest(UpdateProductRequest request)
@@ -268,6 +294,8 @@ public class ProductService : IProductService
         {
             throw new ArgumentException("UnitOfMeasure is required.");
         }
+
+        ValidateProductAttributes(request.ProductionYear, request.Length, request.Width, request.Height);
     }
 
     private static void ValidateImage(ProductImageUpsertRequest image)
@@ -294,5 +322,30 @@ public class ProductService : IProductService
         {
             throw new ArgumentException("PageSize must be less than or equal to 200.");
         }
+    }
+
+    private static void ValidateProductAttributes(int? productionYear, decimal? length, decimal? width, decimal? height)
+    {
+        if (productionYear is <= 0)
+        {
+            throw new ArgumentException("ProductionYear must be greater than 0.");
+        }
+
+        ValidateNonNegative(length, "Length");
+        ValidateNonNegative(width, "Width");
+        ValidateNonNegative(height, "Height");
+    }
+
+    private static void ValidateNonNegative(decimal? value, string fieldName)
+    {
+        if (value is < 0)
+        {
+            throw new ArgumentException($"{fieldName} must be greater than or equal to 0.");
+        }
+    }
+
+    private static string? TrimToNull(string? value)
+    {
+        return string.IsNullOrWhiteSpace(value) ? null : value.Trim();
     }
 }

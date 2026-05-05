@@ -1,308 +1,132 @@
-# TÀI LIỆU MÔ TẢ CHỨC NĂNG HỆ THỐNG
+# IE_BO System Overview
 
-## 1. Giới thiệu
+Tai lieu nay mo ta nhanh cac module dang duoc code/API ho tro trong backend hien tai.
 
-Tài liệu này mô tả các chức năng chính của hệ thống quản lý sản phẩm, tài khoản và phân quyền người dùng.  
-Hệ thống hỗ trợ các nhóm chức năng sau:
+## Kien truc
 
-- Đăng nhập
-- Quản lý tài khoản
-- Phân quyền user
-- Quản lý sản phẩm
+Solution chinh: `ImportExportBO/ImportExportBO.sln`.
 
----
-
-## 2. Chức năng đăng nhập
+Layer chinh:
 
-### 2.1. Mục đích
-Cho phép người dùng truy cập vào hệ thống bằng tài khoản đã được cấp.
-
-### 2.2. Mô tả chức năng
-Người dùng nhập:
-
-- Tên đăng nhập hoặc email
-- Mật khẩu
-
-Hệ thống sẽ kiểm tra thông tin đăng nhập trong cơ sở dữ liệu.
-
-### 2.3. Kết quả xử lý
-- Nếu đúng thông tin: đăng nhập thành công và chuyển vào trang chính
-- Nếu sai thông tin: hiển thị thông báo lỗi
-- Nếu tài khoản bị khóa hoặc ngưng hoạt động: không cho phép đăng nhập
+- `ImportExportBO`: ASP.NET Core API host, controllers, Swagger/JWT setup.
+- `Application`: service, request/response models, validation va orchestration.
+- `Domain`: domain models.
+- `Infrastructure`: Dapper/Npgsql repositories, QueryBuilder, JWT/password/refresh-token implementations.
+- `Logger`: NLog helper project.
 
-### 2.4. Ràng buộc
-- Tên đăng nhập không được để trống
-- Mật khẩu không được để trống
-- Mật khẩu cần được mã hóa khi lưu trong cơ sở dữ liệu
-
-### 2.5. Dữ liệu liên quan
-Bảng sử dụng:
-- `users`
+## Module hien co
 
----
+### 1. User/Auth
 
-## 3. Chức năng quản lý tài khoản
+Chuc nang:
 
-### 3.1. Mục đích
-Cho phép quản trị viên quản lý thông tin tài khoản người dùng trong hệ thống.
+- Login bang `username/password`.
+- Cap access token JWT va refresh token.
+- Refresh token.
+- Revoke token.
+- Logout.
+- Register, update, delete, activate user.
 
-### 3.2. Các chức năng con
-- Thêm tài khoản
-- Sửa tài khoản
-- Xóa tài khoản
-- Xem danh sách tài khoản
-- Xem chi tiết tài khoản
-- Khóa / mở khóa tài khoản
-
-### 3.3. Thông tin tài khoản bao gồm
-- Mã tài khoản
-- Tên đăng nhập
-- Họ tên
-- Email
-- Số điện thoại
-- Mật khẩu
-- Trạng thái
-- Vai trò / nhóm quyền
-
-### 3.4. Quy tắc xử lý
-- Tên đăng nhập là duy nhất
-- Email là duy nhất
-- Không cho phép xóa tài khoản quản trị chính
-- Mật khẩu phải được mã hóa
-- Chỉ người có quyền quản trị mới được thêm, sửa, xóa tài khoản
-
-### 3.5. Dữ liệu liên quan
-Bảng sử dụng:
-- `users`
-- `roles`
-- `user_roles`
-
----
-
-## 4. Chức năng phân quyền user
-
-### 4.1. Mục đích
-Cho phép hệ thống kiểm soát quyền truy cập của từng người dùng theo vai trò.
-
-### 4.2. Mô hình phân quyền
-Hệ thống áp dụng phân quyền theo vai trò (Role-Based Access Control - RBAC).
-
-### 4.3. Các vai trò đề xuất
-- `ADMIN`: toàn quyền hệ thống
-- `MANAGER`: quản lý dữ liệu nghiệp vụ
-- `STAFF`: thao tác dữ liệu được phân công
-- `VIEWER`: chỉ được xem dữ liệu
-
-### 4.4. Quyền hạn ví dụ
-
-| Vai trò | Đăng nhập | Quản lý tài khoản | Phân quyền | Sản phẩm |
-|--------|-----------|-------------------|------------|----------|
-| ADMIN | Có | Có | Có | Toàn quyền |
-| MANAGER | Có | Không / hạn chế | Không | Thêm, sửa, xem, tìm kiếm |
-| STAFF | Có | Không | Không | Xem, tìm kiếm, có thể thêm tùy cấu hình |
-| VIEWER | Có | Không | Không | Chỉ xem, tìm kiếm |
-
-### 4.5. Chức năng phân quyền
-- Gán vai trò cho người dùng
-- Cập nhật vai trò
-- Thu hồi vai trò
-- Kiểm tra quyền trước khi truy cập chức năng
-
-### 4.6. Quy tắc xử lý
-- Một user có thể có một hoặc nhiều vai trò
-- Chỉ `ADMIN` mới được phân quyền
-- Khi user đăng nhập, hệ thống nạp danh sách quyền tương ứng
-
-### 4.7. Dữ liệu liên quan
-Bảng sử dụng:
-- `users`
-- `roles`
-- `permissions`
-- `role_permissions`
-- `user_roles`
-
----
-
-## 5. Chức năng quản lý sản phẩm (*)
-
-### 5.1. Mục đích 
-Cho phép người dùng quản lý thông tin sản phẩm trong hệ thống.
-
-### 5.2. Các chức năng con
-- Thêm sản phẩm
-- Sửa sản phẩm
-- Xóa sản phẩm
-- Xem chi tiết sản phẩm
-- Tìm kiếm sản phẩm
-
----
-
-## 6. Thêm sản phẩm (*)
-
-### 6.1. Mô tả
-Người dùng nhập thông tin sản phẩm mới vào hệ thống.
-
-### 6.2. Thông tin sản phẩm
-- Mã sản phẩm
-- Tên sản phẩm
-- Mô tả
-- Nhóm sản phẩm
-- Đơn vị tính
-- Giá
-- Số lượng tồn
-- Ảnh sản phẩm
-- Trạng thái
-
-### 6.3. Quy tắc xử lý
-- Mã sản phẩm là duy nhất
-- Tên sản phẩm không được để trống
-- Giá phải lớn hơn hoặc bằng 0
-- Số lượng tồn phải lớn hơn hoặc bằng 0
-
-### 6.4. Dữ liệu liên quan
-Bảng sử dụng:
-- `products`
-- `product_images`
-
----
-
-## 7. Sửa sản phẩm (*)
-
-### 7.1. Mô tả
-Cho phép cập nhật thông tin của sản phẩm đã tồn tại.
-
-### 7.2. Nội dung có thể sửa
-- Tên sản phẩm
-- Mô tả
-- Giá
-- Số lượng tồn
-- Ảnh sản phẩm
-- Trạng thái
+API:
 
-### 7.3. Quy tắc xử lý
-- Không được sửa mã sản phẩm nếu hệ thống quy định mã là cố định
-- Kiểm tra dữ liệu hợp lệ trước khi lưu
-- Ghi nhận thời gian cập nhật
-
----
+- `POST api/User/Login`
+- `POST api/User/Refresh-Token`
+- `POST api/User/Revoke-Token`
+- `POST api/User/Logout/{userId}`
+- `POST api/User/Register-User`
+- `PUT api/User/Update-User`
+- `DELETE api/User/Delete-User/{userId}`
+- `PUT api/User/Activate-User/{userId}`
 
-## 8. Xóa sản phẩm (*)
+Bang lien quan: `public."user"`.
 
-### 8.1. Mô tả
-Cho phép loại bỏ sản phẩm khỏi danh sách quản lý.
+### 2. Product
 
-### 8.2. Hình thức xóa
-Khuyến nghị sử dụng **xóa mềm**:
-- Đánh dấu sản phẩm là ngưng hoạt động
-- Không xóa vật lý khỏi cơ sở dữ liệu
+Chuc nang:
 
-### 8.3. Quy tắc xử lý
-- Không cho phép xóa sản phẩm đã phát sinh giao dịch nếu dùng xóa cứng
-- Chỉ người có quyền mới được xóa
+- CRUD san pham.
+- Quan ly anh san pham trong request create/update.
+- Search san pham co paging.
+- San pham co cac thuoc tinh: vat lieu, nam san xuat, ghi chu, chieu dai, chieu rong, chieu cao.
 
----
+API:
 
-## 9. Xem chi tiết sản phẩm (*)
+- `GET api/Product/Get-Product/{productId}`
+- `GET api/Product/Search-Product`
+- `POST api/Product/Insert-Product`
+- `PUT api/Product/Update-Product`
+- `DELETE api/Product/Delete-Product/{productId}`
 
-### 9.1. Mô tả
-Hiển thị đầy đủ thông tin của một sản phẩm.
+Bang lien quan: `product`, `productimage`.
 
-### 9.2. Thông tin hiển thị
-- Mã sản phẩm
-- Tên sản phẩm
-- Mô tả
-- Danh mục
-- Giá
-- Số lượng tồn
-- Ảnh đại diện
-- Danh sách ảnh chi tiết
-- Trạng thái
-- Ngày tạo
-- Ngày cập nhật
+### 3. Partner
 
-### 9.3. Dữ liệu liên quan
-Bảng sử dụng:
-- `products`
-- `product_images`
+Chuc nang:
 
----
+- Quan ly doi tac.
+- Loai doi tac hop le: `CUSTOMER`, `SUPPLIER`, `SHIPPING`.
+- `CUSTOMER` duoc dung lam nguoi mua hang trong contract.
 
-## 10. Tìm kiếm sản phẩm (*)
+API:
 
-### 10.1. Mô tả
-Cho phép người dùng tra cứu sản phẩm theo nhiều tiêu chí.
+- `GET api/Partner/Get-Partner/{partnerId}`
+- `GET api/Partner/Search-Partner`
+- `POST api/Partner/Insert-Partner`
+- `PUT api/Partner/Update-Partner/{partnerId}`
 
-### 10.2. Tiêu chí tìm kiếm
-- Mã sản phẩm
-- Tên sản phẩm
-- Nhóm sản phẩm
-- Trạng thái
-- Khoảng giá
+Bang lien quan: `partner`.
 
-### 10.3. Kết quả
-Hiển thị danh sách sản phẩm phù hợp với điều kiện tìm kiếm.
+### 4. Package
 
-### 10.4. Yêu cầu
-- Tìm kiếm nhanh
-- Có thể kết hợp nhiều điều kiện
-- Hỗ trợ phân trang khi số lượng dữ liệu lớn
+Chuc nang:
 
----
+- CRUD loai kien hang/package master.
+- Package trong API duoc luu vao bang DB `packinglist`.
+- `packageCode` map voi `packinglist.packinglistno`.
+- `packageId` trong contract la `packinglist.id`.
+- Package co so luong san pham trong kien va D/R/C.
 
-## 11. Phân quyền theo chức năng sản phẩm
+API:
 
-| Chức năng | ADMIN | MANAGER | STAFF | VIEWER |
-|----------|-------|---------|-------|--------|
-| Thêm sản phẩm | Có | Có | Tùy quyền | Không |
-| Sửa sản phẩm | Có | Có | Tùy quyền | Không |
-| Xóa sản phẩm | Có | Có | Không | Không |
-| Xem chi tiết | Có | Có | Có | Có |
-| Tìm kiếm | Có | Có | Có | Có |
+- `GET api/Package/Get-Package/{packageId}`
+- `GET api/Package/Search-Package`
+- `POST api/Package/Insert-Package`
+- `PUT api/Package/Update-Package/{packageId}`
+- `DELETE api/Package/Delete-Package/{packageId}`
 
----
+Bang lien quan: `packinglist`.
 
-## 12. Các bảng cơ sở dữ liệu liên quan
+### 5. Contract
 
-### 12.1. `users`
-Lưu thông tin người dùng
+Chuc nang:
 
-### 12.2. `roles`
-Lưu danh sách vai trò
+- Ho tro 2 loai hop dong: `IMPORT` va `EXPORT`.
+- `IMPORT`: tao hop dong voi nha cung cap (`supplierId`), theo san pham, so luong, gia nhap.
+- `EXPORT`: tao hop dong voi khach mua hang (`buyerId`), theo package, product, so kien, gia ban.
+- `EXPORT` phai link sang 1 hop dong nhap qua `importContractNo`.
+- Tao file dinh kem hop dong.
 
-### 12.3. `permissions`
-Lưu danh sách quyền
+API:
 
-### 12.4. `user_roles`
-Liên kết user và vai trò
+- `GET api/Contract/Get-Contract/{contractId}`
+- `GET api/Contract/Search-Contract`
+- `POST api/Contract/Insert-Contract`
+- `POST api/Contract/Insert-Import-Contract`
+- `POST api/Contract/Insert-Contract-Attachment/{contractId}`
 
-### 12.5. `role_permissions`
-Liên kết vai trò và quyền
+Bang lien quan: `contract`, `contractattachment`, `contractpackage`, `contractitem`, `partner`, `product`, `packinglist`.
 
-### 12.6. `products`
-Lưu thông tin sản phẩm
+## Database
 
-### 12.7. `product_images`
-Lưu ảnh sản phẩm
+Tai lieu database chi tiet:
 
----
+- [database_ver1.md](database_ver1.md)
+- [database_diagram_ver1.md](database_diagram_ver1.md)
 
-## 13. Kết luận
+## Validation
 
-Hệ thống gồm 4 nhóm chức năng chính:
+Build solution:
 
-- Đăng nhập để xác thực người dùng
-- Quản lý tài khoản để quản trị user
-- Phân quyền để kiểm soát truy cập
-- Quản lý sản phẩm để hỗ trợ nghiệp vụ chính
-
-Thiết kế này giúp hệ thống:
-- An toàn
-- Dễ quản lý
-- Dễ mở rộng
-- Phù hợp với mô hình CRUD thực tế
-
-
-
-
-
-CÁC CHỨC NĂNG ĐÁNH (*) Ở ĐỀ MỤC SẼ CÓ BẢN DEMO DÙNG THỬ VÀO 13/04/2026
+```powershell
+dotnet build ImportExportBO\ImportExportBO.sln
+```

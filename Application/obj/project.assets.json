@@ -218,11 +218,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Workspace\\IE\\IE_BO\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\Workspace\\IE\\IE_BO\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "d:\\Workspace\\IE\\IE_BO\\Application\\Application.csproj",
+      "projectPath": "D:\\Workspace\\IE\\IE_BO\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\thinkbook\\.nuget\\packages\\",
-      "outputPath": "d:\\Workspace\\IE\\IE_BO\\Application\\obj\\",
+      "outputPath": "D:\\Workspace\\IE\\IE_BO\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

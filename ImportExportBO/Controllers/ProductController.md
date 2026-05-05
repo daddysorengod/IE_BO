@@ -40,6 +40,12 @@ Base route: `api/Product`
     "productName": "Ao thun",
     "hsCode": "6109",
     "unitOfMeasure": "PCS",
+    "material": "Cotton",
+    "productionYear": 2026,
+    "note": "Hang xuat khau",
+    "length": 60.5,
+    "width": 40.0,
+    "height": 2.5,
     "listImage": [
       {
         "productId": 10,
@@ -81,6 +87,12 @@ Base route: `api/Product`
   "productName": "Ao thun",
   "hsCode": "6109",
   "unitOfMeasure": "PCS",
+  "material": "Cotton",
+  "productionYear": 2026,
+  "note": "Hang xuat khau",
+  "length": 60.5,
+  "width": 40.0,
+  "height": 2.5,
   "images": [
     {
       "productId": 0,
@@ -113,6 +125,9 @@ Base route: `api/Product`
 ### Luu y
 
 - Truong bat buoc: `productCode`, `productName`, `unitOfMeasure`
+- Truong mo rong optional: `material`, `productionYear`, `note`, `length`, `width`, `height`
+- Neu gui `productionYear` thi phai `> 0`
+- Neu gui `length`, `width`, `height` thi phai `>= 0`
 - `images` co the rong
 - Tren create, `images[].productId` hien tai khong duoc dung; co the bo qua hoac de `0`
 - Moi image can `imageUrl`, neu thieu se tra ve `400` voi message: `ImageUrl is required.`
@@ -131,6 +146,12 @@ Base route: `api/Product`
   "productName": "Ao thun premium",
   "hsCode": "6109",
   "unitOfMeasure": "PCS",
+  "material": "Cotton 100%",
+  "productionYear": 2026,
+  "note": "Cap nhat quy cach",
+  "length": 61.0,
+  "width": 41.0,
+  "height": 2.5,
   "images": [
     {
       "productId": 10,
@@ -178,6 +199,9 @@ Base route: `api/Product`
 
 - `id > 0` la bat buoc, neu khong se tra ve `400` voi message: `Id must be greater than 0.`
 - Truong bat buoc: `productCode`, `productName`, `unitOfMeasure`
+- Truong mo rong optional: `material`, `productionYear`, `note`, `length`, `width`, `height`
+- Neu gui `productionYear` thi phai `> 0`
+- Neu gui `length`, `width`, `height` thi phai `>= 0`
 - `images[].productId > 0`: update image da ton tai
 - `images[].productId = 0`: insert image moi
 - `images[].productId` la field legacy, thuc te dang duoc dung nhu `product image id`
@@ -253,6 +277,12 @@ Base route: `api/Product`
         "productName": "Ao thun",
         "hsCode": "6109",
         "unitOfMeasure": "PCS",
+        "material": "Cotton",
+        "productionYear": 2026,
+        "note": "Hang xuat khau",
+        "length": 60.5,
+        "width": 40.0,
+        "height": 2.5,
         "imageUrl": "https://cdn/img1.jpg"
       },
       {
@@ -261,6 +291,12 @@ Base route: `api/Product`
         "productName": "Ao khoac",
         "hsCode": "6201",
         "unitOfMeasure": "PCS",
+        "material": "Polyester",
+        "productionYear": 2025,
+        "note": null,
+        "length": 70.0,
+        "width": 50.0,
+        "height": 4.0,
         "imageUrl": "https://cdn/img2.jpg"
       }
     ],
@@ -305,6 +341,10 @@ Base route: `api/Product`
 - `ProductCode is required.`
 - `ProductName is required.`
 - `UnitOfMeasure is required.`
+- `ProductionYear must be greater than 0.`
+- `Length must be greater than or equal to 0.`
+- `Width must be greater than or equal to 0.`
+- `Height must be greater than or equal to 0.`
 - `ImageUrl is required.`
 - `Page must be greater than 0.`
 - `PageSize must be greater than 0.`

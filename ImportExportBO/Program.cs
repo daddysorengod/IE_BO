@@ -1,7 +1,13 @@
 using Application;
+using Application.Security;
 using NLog;
 using NLog.Web;
 using Infrastructure;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Security.Claims;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,7 +41,6 @@ try
     builder.Services.AddControllers();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen();
 
     // Configure app configuration
     builder.Configuration.AddJsonFile(ConfigFile, optional: false, reloadOnChange: true)
@@ -44,6 +49,55 @@ try
 
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();
+
+    var jwtOptions = BuildJwtOptions(builder.Configuration);
+
+    builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = jwtOptions.Issuer,
+                ValidAudience = jwtOptions.Audience,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.SecretKey)),
+                NameClaimType = ClaimTypes.Name,
+                RoleClaimType = ClaimTypes.Role,
+                ClockSkew = TimeSpan.Zero
+            };
+        });
+    builder.Services.AddAuthorization();
+
+    builder.Services.AddSwaggerGen(options =>
+    {
+        options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+        {
+            Name = "Authorization",
+            Type = SecuritySchemeType.Http,
+            Scheme = "bearer",
+            BearerFormat = "JWT",
+            In = ParameterLocation.Header,
+            Description = "Nhap access token JWT vao day."
+        });
+
+        options.AddSecurityRequirement(new OpenApiSecurityRequirement
+        {
+            {
+                new OpenApiSecurityScheme
+                {
+                    Reference = new OpenApiReference
+                    {
+                        Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                    }
+                },
+                Array.Empty<string>()
+            }
+        });
+    });
 
     builder.Services.AddApplication();
     builder.Services.AddInfrastructure(builder.Configuration);
@@ -59,6 +113,7 @@ try
     app.UseCors("AllowAllOrigins");
     app.UseHttpsRedirection();
 
+    app.UseAuthentication();
     app.UseAuthorization();
 
     app.MapControllers();
@@ -75,4 +130,26 @@ finally
 {
     // Ensure to flush and stop internal timers/threads before application-exit
     NLog.LogManager.Shutdown();
+}
+
+static JwtOptions BuildJwtOptions(IConfiguration configuration)
+{
+    var options = new JwtOptions
+    {
+        Issuer = configuration["Jwt:Issuer"]?.Trim() ?? string.Empty,
+        Audience = configuration["Jwt:Audience"]?.Trim() ?? string.Empty,
+        SecretKey = configuration["Jwt:SecretKey"]?.Trim() ?? string.Empty,
+        AccessTokenExpirationMinutes = ParsePositiveInt(configuration["Jwt:AccessTokenExpirationMinutes"], 15),
+        RefreshTokenExpirationDays = ParsePositiveInt(configuration["Jwt:RefreshTokenExpirationDays"], 7)
+    };
+
+    options.Validate();
+    return options;
+}
+
+static int ParsePositiveInt(string? value, int defaultValue)
+{
+    return int.TryParse(value, out var parsed) && parsed > 0
+        ? parsed
+        : defaultValue;
 }

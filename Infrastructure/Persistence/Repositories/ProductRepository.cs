@@ -25,7 +25,7 @@ public class ProductRepository : IProductRepository
         {
             IQueryBuilder<Product, object> queryBuilder = new QueryBuilder<Product, object>();
             var sql = queryBuilder
-                .Select(p => new { p.Id, p.ProductCode, p.ProductName, p.HsCode, p.UnitOfMeasure, p.Delt })
+                .Select(p => new { p.Id, p.ProductCode, p.ProductName, p.HsCode, p.UnitOfMeasure, p.Material, p.ProductionYear, p.Note, p.Length, p.Width, p.Height, p.Delt })
                 .Where(p => p.Id == productId)
                 .BuildQuery();
 
@@ -46,7 +46,13 @@ public class ProductRepository : IProductRepository
                 ProductCode = row.ProductCode,
                 ProductName = row.ProductName,
                 HsCode = row.HsCode,
-                UnitOfMeasure = row.UnitOfMeasure
+                UnitOfMeasure = row.UnitOfMeasure,
+                Material = row.Material,
+                ProductionYear = row.ProductionYear,
+                Note = row.Note,
+                Length = row.Length,
+                Width = row.Width,
+                Height = row.Height
             };
         }
         catch (Exception ex)
@@ -67,7 +73,13 @@ public class ProductRepository : IProductRepository
                     ProductCode = product.ProductCode,
                     ProductName = product.ProductName,
                     HsCode = product.HsCode,
-                    UnitOfMeasure = product.UnitOfMeasure
+                    UnitOfMeasure = product.UnitOfMeasure,
+                    Material = product.Material,
+                    ProductionYear = product.ProductionYear,
+                    Note = product.Note,
+                    Length = product.Length,
+                    Width = product.Width,
+                    Height = product.Height
                 })
                 .BuildQuery()
                 + "\nRETURNING id;";
@@ -96,7 +108,13 @@ public class ProductRepository : IProductRepository
                     ProductCode = product.ProductCode,
                     ProductName = product.ProductName,
                     HsCode = product.HsCode,
-                    UnitOfMeasure = product.UnitOfMeasure
+                    UnitOfMeasure = product.UnitOfMeasure,
+                    Material = product.Material,
+                    ProductionYear = product.ProductionYear,
+                    Note = product.Note,
+                    Length = product.Length,
+                    Width = product.Width,
+                    Height = product.Height
                 })
                 .Where(p => p.Id == product.Id)
                 .BuildQuery();
@@ -154,7 +172,7 @@ public class ProductRepository : IProductRepository
             IQueryBuilder<Product, object> queryBuilder = new QueryBuilder<Product, object>();
             queryBuilder
                 .LeftJoin<ProductImage>((p, image) => p.Id == image.ProductId && image.IsDefault == "Y", "pi")
-                .SelectRaw("t.Id, t.ProductCode, t.ProductName, t.HsCode, t.UnitOfMeasure, pi.ImageUrl")
+                .SelectRaw("t.Id, t.ProductCode, t.ProductName, t.HsCode, t.UnitOfMeasure, t.Material, t.ProductionYear, t.Note, t.Length, t.Width, t.Height, pi.ImageUrl")
                 .OrderBy(p => p.ProductName)
                 .Offset(condition.Offset)
                 .Limit(condition.Limit);

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -168,6 +169,11 @@ namespace Infrastructure.Persistence.Querying
                 return flag ? "TRUE" : "FALSE";
             }
 
+            if (value is DateOnly dateOnly)
+            {
+                return $"'{dateOnly:yyyy-MM-dd}'";
+            }
+
             if (value is DateTime dateTime)
             {
                 return $"'{dateTime:yyyy-MM-dd HH:mm:ss}'";
@@ -181,6 +187,11 @@ namespace Infrastructure.Persistence.Querying
             if (value is char c)
             {
                 return $"'{c.ToString().Replace("'", "''")}'";
+            }
+
+            if (value is IFormattable formattable)
+            {
+                return formattable.ToString(null, CultureInfo.InvariantCulture) ?? "NULL";
             }
 
             return value.ToString() ?? "NULL";
